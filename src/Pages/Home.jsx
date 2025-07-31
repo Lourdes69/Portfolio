@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import ImagePerfil from '../../public/perfil.png'
 import { FaDownload } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import CV from '../../public/CV-Lourdes.pdf'
 import '../../src/App.css'
 
 const Home = () => {
@@ -22,13 +23,16 @@ const Home = () => {
             Codificando ideas con creatividad y color. Amo el diseño y disfruto transformar ideas en interfaces atractivas, modernas y funcionales.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center md:justify-start">
-            <Link
-              to="/proyectos"
+            <a
+              href={CV}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gradient-to-r from-[#8B5CF6] to-[#A855F7] text-lg hover:opacity-90 transition px-8 py-3 rounded-full text-white font-medium flex items-center justify-center gap-2"
             >
               <FaDownload className="text-white" />
               Descargar CV
-            </Link>
+            </a>
             <Link
               to="/contacto"
               className="border border-purple-500 px-8 py-3 rounded-full text-purple-500 font-bold text-lg hover:bg-purple-500 hover:text-white transition-all flex items-center justify-center gap-2"

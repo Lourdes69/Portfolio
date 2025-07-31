@@ -20,7 +20,7 @@ export default function Header() {
         <div className="flex items-center gap-4 relative">
           {/* Ícono de LinkedIn */}
           <a
-            href="https://linkedin.com/in/tuusuario"
+            href="https://www.linkedin.com/in/lourdes-avalos-91a301255/"
             target="_blank"
             rel="noreferrer"
           >
@@ -31,7 +31,7 @@ export default function Header() {
 
           {/* Ícono de GitHub */}
           <a
-            href="https://github.com/tuusuario"
+            href="https://github.com/Lourdes69"
             target="_blank"
             rel="noreferrer"
           >
@@ -41,10 +41,14 @@ export default function Header() {
           <div className="w-px h-10 bg-gray-400 opacity-40 hidden lg:block" />
 
           {/* Botón de Contacto solo en desktop */}
-          <button className="hidden lg:block border text-gray-300 font-medium border-purple-600 px-4 py-1 rounded text-xl hover:bg-purple-600 transition">
-            Contacto
-          </button>
-
+          <Link
+            to="/contacto"
+          >
+            <button className="hidden lg:block border text-gray-300 font-medium border-purple-600 px-4 py-1 rounded text-xl hover:bg-purple-600 transition">
+              Contacto
+            </button>
+            </Link>
+         
           <div className="w-px h-10 bg-gray-400 opacity-40" />
 
           {/* Menú móvil */}
