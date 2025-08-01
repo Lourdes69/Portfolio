@@ -23,7 +23,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center md:justify-start">
             <a
-              href="/cv.pdf"
+              href="https://drive.google.com/file/d/10EXZYhuLTVpG0hv-2U5jtiuxqcI8k9Zs/view?usp=sharing"
               download
               target="_blank"
               rel="noopener noreferrer"

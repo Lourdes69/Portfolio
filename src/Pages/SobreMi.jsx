@@ -2,7 +2,7 @@ import React from 'react'
 import aboutImage from '../../public/about.png';
 import { FaDownload } from 'react-icons/fa';
 import Valores from '../Components/Valores';
-import CV from '../../public/CV-Lourdes.pdf';
+
 
 
 const SobreMi = () => {
@@ -38,7 +38,7 @@ const SobreMi = () => {
               </div>
               <div className="pt-6 mb-6 w-full md:w-auto"> {/* margen inferior y ancho responsivo */}
                 <a
-                  href={CV}
+                  href='https://drive.google.com/file/d/10EXZYhuLTVpG0hv-2U5jtiuxqcI8k9Zs/view?usp=sharing'
                   download
                   target="_blank"
                   rel="noopener noreferrer"
