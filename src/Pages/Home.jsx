@@ -23,7 +23,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center md:justify-start">
             <a
-              href="/CV-LOURDES.pdf"
+              href="/cv.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"
