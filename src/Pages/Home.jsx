@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import ImagePerfil from '../../public/perfil.png'
 import { FaDownload } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import CV from '../../public/CV-LOURDES.pdf'
 import '../../src/App.css'
 
 const Home = () => {
@@ -24,7 +23,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center md:justify-start">
             <a
-              href={CV}
+              href="/CV-LOURDES.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"
