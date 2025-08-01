@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import ImagePerfil from '../../public/perfil.png'
 import { FaDownload } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import CV from '../../public/CV-Lourdes.pdf'
+import CV from '../../public/CV-LOURDES.pdf'
 import '../../src/App.css'
 
 const Home = () => {
