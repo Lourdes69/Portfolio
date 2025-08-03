@@ -8,14 +8,23 @@ import ProjectInvitation from '../Components/ProjectInvitation';
 const Proyectos = () => {
   return (
     <>
-      <section className=" bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-10 px-6 text-white mb-10">
+      <section
+
+        className=" bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-10 px-6 text-white mb-10">
         <div className="max-w-7xl mx-auto">
+          <div data-aos="zoom-in">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Proyectos Destacados</h2>
           <p className="text-center text-lg mb-16">Explora mis últimas creaciones digitales, donde la innovación se encuentra con el diseño excepcional.</p>
-
-          <div className="flex flex-col md:flex-row items-center justify-between gap-10 bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 md:p-12 shadow-lg">
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            className="flex flex-col md:flex-row items-center justify-between gap-10 bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 md:p-12 shadow-lg">
             {/* Texto a la izquierda */}
-            <div className="md:w-1/2">
+            <div
+              className="md:w-1/2">
               <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-sm font-semibold text-white px-4 py-2 rounded-full mb-4 inline-block">
                 Proyecto Destacado
               </span>
@@ -57,10 +66,12 @@ const Proyectos = () => {
             </div>
           </div>
         </div>
+
         <ProyectoExtra />
+
         <ProjectInvitation />
       </section>
-      
+
     </>
   );
 };

@@ -8,11 +8,15 @@ import '../../src/App.css'
 const Home = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-800 to-purple-900 text-white relative overflow-hidden px-4 sm:px-6">
-      <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 max-w-6xl w-full mb-10  mt-10">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-14 max-w-6xl w-full mb-10  mt-10">
         {/* Texto */}
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-10">
+        <div
+          data-aos="fade-down-left"
+          data-aos-duration="1500"
+          className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left z-10"
+        >
           <span className='text-4xl sm:text-5xl md:text-6xl mb-4 font-press'>Hola, </span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4 font-press">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl  font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4 font-press">
             Soy Lourdes
           </h1>
           <h2 className="text-xl sm:text-2xl font-semibold mb-4 font-press">
@@ -43,8 +47,13 @@ const Home = () => {
         </div>
 
         {/* Imagen */}
-        <div className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-full bg-gradient-to-tr from-purple-500 via-pink-500 to-indigo-500 p-1">
-          <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
+        <div
+          data-aos="fade-down-right"
+          data-aos-duration="1500"
+          className="relative w-60 h-60 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-full bg-gradient-to-tr from-purple-500 via-pink-500 to-indigo-500 p-1">
+          <div
+            className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center"
+          >
             <img
               src={ImagePerfil}
               alt="Lourdes Avalos"

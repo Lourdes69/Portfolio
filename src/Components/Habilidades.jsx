@@ -29,10 +29,10 @@ const tecnologiasAdicionales = [
     { name: 'Netlify', icon: <SiNetlify />, color: 'bg-green-400 text-black' },
 ]
 
-const CardHabilidades = ({ title, habilidades }) => (
-    <div className='bg-purple-700 border-b-4 border-white/20 p-4 md:p-6 rounded-2xl shadow-2xl'>
+const CardHabilidades = ({ title, habilidades, className = '' }) => (
+    <div className={`h-full flex flex-col bg-purple-700 border-b-4 border-white/20 p-4 md:p-6 rounded-2xl shadow-2xl ${className}`}>
         <h2 className='text-lg md:text-xl font-bold text-center mb-4'>{title}</h2>
-        <div className='flex flex-wrap gap-2 md:gap-3 justify-center'>
+        <div className='flex flex-wrap gap-2 md:gap-3 justify-center mt-auto'>
             {habilidades.map((tech, index) => (
                 <div
                     key={index}
@@ -46,9 +46,10 @@ const CardHabilidades = ({ title, habilidades }) => (
     </div>
 )
 
+
 const Habilidades = () => {
     return (
-        <section className=' px-6 py-12 text-white'>
+        <section className='px-6 py-12 text-white'>
             <div className='max-w-7xl mx-auto text-center'>
                 <h1 className='text-4xl font-bold mb-4'>Habilidades Técnicas</h1>
                 <p className='text-gray-300 text-xl'>
@@ -57,17 +58,23 @@ const Habilidades = () => {
             </div>
 
             <div className='max-w-6xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 gap-12'>
-                <CardHabilidades title='Desarrollo Frontend' habilidades={habilidadesFrontend} />
-                <CardHabilidades title='Desarrollo Backend' habilidades={habilidadesBackend} />
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <CardHabilidades className="" title='Desarrollo Frontend' habilidades={habilidadesFrontend} />
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <CardHabilidades className="" title='Desarrollo Backend' habilidades={habilidadesBackend} />
+                </div>
             </div>
 
-            <div className='max-w-3xl mx-auto mt-16'>
-                <CardHabilidades title='Tecnologías Adicionales' habilidades={tecnologiasAdicionales} />
+            <div className='max-w-3xl mx-auto mt-16' data-aos="fade-up" data-aos-delay="300">
+                <CardHabilidades className="" title='Tecnologías Adicionales' habilidades={tecnologiasAdicionales} />
             </div>
+
         </section>
-       
+
     )
-    
+
 }
 
 export default Habilidades

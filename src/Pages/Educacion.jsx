@@ -38,19 +38,24 @@ const EducationSection = () => {
 	return (
 		<section className="px-4 py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900  text-white">
 			<div className="max-w-4xl mx-auto">
-				<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
-					Mi{" "}
-					<span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-						Educación
-					</span>
-				</h1>
+				<div data-aos="zoom-in">
+					<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
+						Mi{" "}
+						<span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+							Educación
+						</span>
+					</h1>
+				
 				<p className="text-base sm:text-lg md:text-xl text-gray-400 mb-8 sm:mb-12">
 					Mi trayectoria académica y profesional
 				</p>
+				</div>
 				<div className="space-y-6 sm:space-y-8 md:space-y-10">
 					{educationData.map((item, index) => (
 						<div
 							key={index}
+							data-aos="fade-up"
+							data-aos-delay={`${index * 100}`}
 							className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 bg-white/10 backdrop-blur-lg border border-white/20 p-4 sm:p-6 rounded-2xl shadow-lg"
 						>
 							{/* Ícono */}

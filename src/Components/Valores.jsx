@@ -2,7 +2,8 @@ import { FaLightbulb, FaCheckCircle, FaUsers, FaBookOpen } from "react-icons/fa"
 
 const Valores = () => {
   return (
-    <div className="grid grid-cols-2 gap-6 w-full max-w-sm">
+    <div
+      className="grid grid-cols-2 gap-6 w-full max-w-sm">
       {/* Card 1 */}
       <div className="bg-gradient-to-r from-purple-500/20 border  to-pink-500/20 border-purple-500/30 rounded-2xl p-4">
         <FaLightbulb size={20} className="mx-auto mb-2 text-yellow-300" />

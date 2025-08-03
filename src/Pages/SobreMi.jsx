@@ -10,18 +10,22 @@ const SobreMi = () => {
     <>
       <div className="min-h-screen px-4 py-20  text-white">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-16 ">
+          <div
+            data-aos="flip-left"
+            className="mb-16 ">
             <h1 className="text-5xl lg:text-6xl font-bold mb-3">
               Sobre{' '}
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Mí
               </span>
             </h1>
-             <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-purple-600 "></div>
-            
+            <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-purple-600 "></div>
+
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex flex-col items-start space-y-4">
+            <div
+              data-aos="flip-right"
+              className="flex flex-col items-start space-y-4">
               <div className="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed space-y-6 font-mono">
                 <p>
                   Me gusta dar vida y color a las páginas web, combinando diseño y código para crear experiencias visuales atractivas y funcionales.
@@ -50,7 +54,9 @@ const SobreMi = () => {
               </div>
 
             </div>
-            <div className="flex flex-col items-center space-y-10 md:space-y-0 md:space-x-10">
+            <div
+              data-aos="zoom-in"
+              className="flex flex-col items-center space-y-10 md:space-y-0 md:space-x-10">
               <div className="relative  md:mt-0"> {/* margen negativo para subir la imagen */}
                 <div className="w-80 h-80 mb-6 rounded-3xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 p-4">
                   <div className="w-full h-full rounded-2xl overflow-hidden ">

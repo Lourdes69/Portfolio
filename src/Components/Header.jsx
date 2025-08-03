@@ -9,6 +9,7 @@ export default function Header() {
 
   return (
     <>
+
       <header className="w-full text-white flex items-center justify-between px-6 py-6 md:px-12 lg:px-24">
         <Link
           to="/"
@@ -68,6 +69,7 @@ export default function Header() {
         </div>
       </header>
       <div className="w-full h-px bg-gray-500 opacity-40" />
+    
     </>
   );
 }

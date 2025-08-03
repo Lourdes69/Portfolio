@@ -4,7 +4,7 @@ import greenImage from '../../public/green.png'
 import fastlabImage from '../../public/fastlab.png'
 import frutoImage from '../../public/frutos.png'
 import { HiOutlineExternalLink } from "react-icons/hi";
-import { FaReact, FaBootstrap, FaGithub, FaHtml5,  FaCss3Alt, FaJs } from "react-icons/fa";
+import { FaReact, FaGithub, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 
@@ -43,10 +43,13 @@ const ProyectoExtra = () => {
 
 
     return (
-       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-6xl mt-16 cursor-pointer ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-6xl mt-16 cursor-pointer ">
             {proyectos.map((proyecto, index) => (
                 <div
                     key={index}
+                    data-aos="zoom-out-up"
+                    data-aos-duration="1000"
+                    data-aos-delay={`${index * 100}`}
                     className="group bg-white/10 border border-white/20 rounded-3xl overflow-hidden backdrop-blur-lg transition-transform duration-300 hover:scale-[1.03]"
                 >
                     <img
@@ -54,7 +57,8 @@ const ProyectoExtra = () => {
                         alt={proyecto.titulo}
                         className="object-cover w-full h-48 transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="p-6 space-y-4">
+                    <div
+                        className="p-6 space-y-4">
                         <h3 className="text-white text-lg font-bold">{proyecto.titulo}</h3>
                         <p className="text-gray-300 text-sm mb-2">{proyecto.descripcion}</p>
 

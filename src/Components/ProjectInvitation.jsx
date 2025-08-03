@@ -3,7 +3,9 @@ import { LuCode } from "react-icons/lu";
 
 const ProjectInvitation = () => {
     return (
-        <div className="text-center mx-auto my-16   ">
+        <div 
+     data-aos="zoom-in-down"
+        className="text-center mx-auto my-16   ">
             <div className="bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-purple-500/10 
                       border border-pink-400/50 shadow-lg hover:shadow-2xl transition-shadow duration-500 
                       backdrop-blur-xl p-10 max-w-3xl mx-auto rounded-3xl">
@@ -21,20 +23,21 @@ const ProjectInvitation = () => {
 
                     {/* Texto */}
                     <p className="text-lg text-gray-300 max-w-lg mx-auto">
-                        Estoy siempre abierta a nuevos desafíos y colaboraciones emocionantes.
-                        ¡Hablemos sobre tu próxima gran idea!
+                        Si estás buscando a alguien que combine diseño, código y pasión por la experiencia de usuario,
+                        ¡acá estoy! Hablemos de tu proyecto.
                     </p>
 
                     {/* Botón */}
                     <div className="flex items-center justify-center space-x-4">
-                        <button
+                        <a
+                            href="mailto:lourdesdev7@gmail.com?subject=Hola%20Lourdes&body=Me%20gustaría%20hablar%20sobre%20un%20proyecto..."
                             className="flex items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500 
-                       hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 text-lg 
-                       rounded-2xl shadow-md hover:shadow-xl transition-all duration-300"
+             hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 text-lg 
+             rounded-2xl shadow-md hover:shadow-xl transition-all duration-300"
                         >
-                            <FaPaperPlane size={15} className=" mr-2" />
+                            <FaPaperPlane size={15} className="mr-2" />
                             Iniciar Conversación
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

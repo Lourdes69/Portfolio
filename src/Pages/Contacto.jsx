@@ -28,34 +28,36 @@ const Contacto = () => {
   return (
     <div className="min-h-screen p-8 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <div className="max-w-5xl mx-auto">
-        <div className="mb-16"></div>
+        <div data-aos="zoom-in-down">
+          <div className="mb-16"></div>
 
-        <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-          Contáctame{' '}
-          <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            💜
-          </span>
-        </h1>
+          <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+            Contáctame{' '}
+            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              💜
+            </span>
+          </h1>
 
-        <p className="text-xl text-gray-400 mb-16">
-          ¿Tienes un proyecto en mente? ¡Hablemos y hagámoslo realidad!
-        </p>
-
+          <p className="text-xl text-gray-400 mb-16">
+            ¿Tienes un proyecto en mente? ¡Hablemos y hagámoslo realidad!
+          </p>
+        </div>
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Info de contacto */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-                <FiMessageCircle className="h-8 w-8 text-blue-400 mr-3" />
-                Hablemos
-              </h3>
-              <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                Estoy disponible para nuevos proyectos y oportunidades de colaboración.
-                Ya sea que necesites desarrollar una aplicación web desde cero o mejorar
-                una existente, estoy aquí para ayudarte.
-              </p>
+          <div div data-aos="zoom-in-right">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+                  <FiMessageCircle className="h-8 w-8 text-blue-400 mr-3" />
+                  Hablemos
+                </h3>
+                <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                  Estoy disponible para nuevos proyectos y oportunidades de colaboración.
+                  Ya sea que necesites desarrollar una aplicación web desde cero o mejorar
+                  una existente, estoy aquí para ayudarte.
+                </p>
+              </div>
             </div>
-
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <div
@@ -87,7 +89,9 @@ const Contacto = () => {
           </div>
 
           {/* Formulario de contacto con Formspree */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-8">
+          <div
+            data-aos="zoom-out-down"
+            className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-8">
             <h3 className="text-2xl font-bold text-white mb-6">Envíame un mensaje</h3>
 
             <form
