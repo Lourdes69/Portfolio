@@ -4,7 +4,7 @@ import greenImage from '../../public/green.png'
 import fastlabImage from '../../public/fastlab.png'
 import frutoImage from '../../public/frutos.png'
 import { HiOutlineExternalLink } from "react-icons/hi";
-import { FaReact, FaGithub, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
+import { FaReact, FaGithub, FaHtml5, FaCss3Alt, FaBootstrap } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 
@@ -16,7 +16,7 @@ const ProyectoExtra = () => {
             estado: "Completado",
             imagen: auraImage,
             url: "https://salon-de-belleza-psi.vercel.app",
-            tecnologias: [FaReact, RiTailwindCssFill, IoLogoVercel, FaGithub]
+            tecnologias: [FaReact, FaBootstrap, IoLogoVercel, FaGithub]
         },
         {
             titulo: "GreenIX",
@@ -34,10 +34,10 @@ const ProyectoExtra = () => {
         },
         {
             titulo: "Fruta & Fruto",
-            descripcion: "Blogs de recetas saludables con React y Tailwind CSS. Incluye recetas, consejos nutricionales y diseño responsivo.",
+            descripcion: "Blogs de recetas saludables con Html y Css. Incluye recetas, consejos nutricionales y diseño responsivo.",
             imagen: frutoImage,
-            url: "https://fruta-y-fruto.vercel.app/",
-            tecnologias: [FaHtml5, FaCss3Alt, FaJs, FaGithub]
+            url: "https://lourdes69.github.io/Arquitextura-CSS/",
+            tecnologias: [FaHtml5, FaCss3Alt,  FaGithub]
         }
     ];
 

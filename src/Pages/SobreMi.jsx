@@ -31,7 +31,7 @@ const SobreMi = () => {
                   Me gusta dar vida y color a las páginas web, combinando diseño y código para crear experiencias visuales atractivas y funcionales.
                 </p>
                 <p>
-                  Empecé mi camino en la programación hace dos años, y desde entonces no he dejado de aprender. Participé en simulaciones laborales que me permitieron aplicar mis conocimientos en situaciones reales, colaborar en equipo y seguir creciendo profesionalmente.
+                 Desde que inicié en la programación no he dejado de aprender. Participé en simulaciones laborales que me permitieron aplicar mis conocimientos en situaciones reales, colaborar en equipo y seguir desarrollándome profesionalmente.
                 </p>
                 <p>
                   Programar mientras escucho música es uno de mis momentos favoritos: me relaja y me desconecta del mundo exterior. Y cuando no estoy en la compu, disfruto salir a caminar, andar en bici, y sobre todo, ser mamá. Mi hijo es mi mayor inspiración 💙
