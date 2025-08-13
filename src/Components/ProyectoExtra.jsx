@@ -22,7 +22,7 @@ const ProyectoExtra = () => {
             titulo: "GreenIX",
             descripcion: "Proyecto desarrollado en simulación laboral con No Country. Página de productos solares usando React, Tailwind CSS y metodología Scrum.",
             imagen: greenImage,
-            url: "https://greenix.vercel.app/",
+            url: "https://c14-15-t-node-react.vercel.app/",
             tecnologias: [FaReact, RiTailwindCssFill, IoLogoVercel, FaGithub]
         },
         {
@@ -36,7 +36,7 @@ const ProyectoExtra = () => {
             titulo: "Fruta & Fruto",
             descripcion: "Blogs de recetas saludables con Html y Css. Incluye recetas, consejos nutricionales y diseño responsivo.",
             imagen: frutoImage,
-            url: "https://lourdes69.github.io/Arquitextura-CSS/",
+            url: "https://lourdes69.github.io/SaborSalud/",
             tecnologias: [FaHtml5, FaCss3Alt,  FaGithub]
         }
     ];

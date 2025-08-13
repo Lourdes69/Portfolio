@@ -45,7 +45,7 @@ const Proyectos = () => {
               {/* Botones */}
               <div className="flex gap-4">
 
-                <a href="https://huellitasshop.netlify.app" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-blue-400 to-purple-500 transition px-8 py-3 rounded-xl text-white font-semibold shadow">
+                <a href="https://huellitasshop.netlify.app/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-blue-400 to-purple-500 transition px-8 py-3 rounded-xl text-white font-semibold shadow">
                   <FaEye size={19} className="inline-block mr-2  " />
                   Ver Demo
                 </a>
